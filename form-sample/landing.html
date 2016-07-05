@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+  <form>
+    <div>Name: <span id="name-target"></span></div>
+    <div>Gender: <span id="gender-target"></span></div>
+
+    <label>Age: <input type="text" name="age" /></label>
+  </form>
+
+  <script type="text/javascript">
+    var frmName = document.querySelector('#name-target');
+    var frmGender = document.querySelector('#gender-target');
+
+    var params = location.search.substr(1).split('&');
+    var queryValues = {};
+    for(var i in params) {
+      var pair = params[i];
+      var keyValue = pair.split('=');
+      queryValues[keyValue[0]] = keyValue[1];
+    }
+
+    frmName.innerText = queryValues['name'];
+    frmGender.innerText = queryValues['gender'];
+  </script>
+</body>
+</html>
