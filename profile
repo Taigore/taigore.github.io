@@ -1,0 +1,2 @@
+I am a self taught software developer. I have yearly professional experience in web and desktop development from the ground up, and I am knowledgeable in many fields of computer science and general expertise, so I can understand the needs of the most heterogeneous clients.
+I do enjoy explaining what each decision means in my work, so if you wish to participate in any strategical planning I'll help you understand what your choices imply.
