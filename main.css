@@ -1,6 +1,15 @@
-table {
-    border-spacing: 0px;
+/* Font */
+
+@font-face {
+  font-family: 'Titillium-Regular';
+  src: url('fonts/TitilliumWeb/Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/TitilliumWeb/Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/TitilliumWeb/Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/TitilliumWeb/Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/TitilliumWeb/Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/TitilliumWeb/Regular.svg#TitilliumWeb-Regular') format('svg'); /* Legacy iOS */
 }
-td {
-    border: 1px solid black;
+
+body {
+  font-family: 'Titillium-Regular', sans-serif;
 }
