@@ -10,6 +10,20 @@
        url('fonts/TitilliumWeb/Regular.svg#TitilliumWeb-Regular') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Titillium-Bold';
+  src: url('fonts/TitilliumWeb/Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/TitilliumWeb/Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/TitilliumWeb/Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/TitilliumWeb/Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/TitilliumWeb/Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/TitilliumWeb/Bold.svg#TitilliumWeb-Bold') format('svg'); /* Legacy iOS */
+}
+
 body {
   font-family: 'Titillium-Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'Titillium-Bold', sans-serif;
 }
