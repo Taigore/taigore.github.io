@@ -23,11 +23,12 @@ $(function() {
 	$('button#send').click(function(event) {
 		event.preventDefault();
 		
-		var id = state.map(function(elem) { return elem ? '1' : '0'; }).join('');		
+		var id = state.map(function(elem) { return elem ? '1' : '0'; }).join('');
+
 		if(audio)
-			audio.stop();
+			audio.pause();
 		
-		audio = new Audio('audio/'.concat(id));
+		audio = new Audio('/audio/'.concat(id));
 		audio.play();
 	});
 });
