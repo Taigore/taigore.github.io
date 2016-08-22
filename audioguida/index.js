@@ -28,7 +28,7 @@ $(function() {
 		if(audio)
 			audio.pause();
 		
-		audio = new Audio('/audio/'.concat(id));
+		audio = new Audio('audio/'.concat(id));
 		audio.play();
 	});
 });
