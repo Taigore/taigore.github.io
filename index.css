@@ -86,6 +86,10 @@ body {
     background-color: #333;
     color: #DDD;
 }
+a {
+    color: #DDD;
+    text-decoration: none;
+}
 h2 {
     color: #EEE;
 }
@@ -93,10 +97,15 @@ h2 {
     list-style: none;
     background-color: #444;
     border-color: #3B3B3B;
-    border-left-color: transparent;
     border-left-width: 0;
     letter-spacing: 2px;
     border-top-right-radius: 999px;
+    cursor: pointer;
+}
+#nav-menu > li:hover {
+    background-color: #3B3B3B;
+    border-color: #444;
+    border-top-color: #3B3B3B;
 }
 #avatar {
     border-color: #999;
