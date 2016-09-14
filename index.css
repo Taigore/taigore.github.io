@@ -53,14 +53,12 @@ h2 {
 #sidebar {
     width: 20%;
 }
-#main {
-    width: 80%;
-}
 #content {
     clear: left;
 }
 #content p {
     float: left;
+    clear: left;
     margin: 0 1em 2em;
     max-width: 35.5em;
 }
