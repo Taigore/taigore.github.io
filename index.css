@@ -22,63 +22,84 @@
 
 body {
   font-family: 'Titillium-Regular', sans-serif;
+  font-size: 13pt;
 }
-
 h1 {
   font-family: 'Titillium-Bold', sans-serif;
+  font-size: 2em;
 }
-
-/* Main layout */
-
-#left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 75%;
-
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-bottom: 25px;
+h2 {
+  font-size: 2.5em;
 }
-
-#right {
-  position: absolute;
-  top: 0;
-  left: 75%;
-  width: 25%;
-  padding: 25px;
-  padding-top: 10em;
-}
-
-#avatar {
-  height: 5em;
-  display: block;
-  float: left;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 #nav-menu {
-  list-style: none;
   font-family: Titillium-Bold;
 }
 
+/* Main layout */
+* { box-sizing: border-box; }
+body {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin: 0 1em 0.5em;
+}
+#sidebar, #main {
+    display: table-cell;
+}
+#sidebar {
+    width: 20%;
+}
+#main {
+    width: 80%;
+}
+#content {
+    clear: left;
+}
+#content p {
+    float: left;
+    margin: 0 1em 2em;
+    max-width: 35.5em;
+}
+#nav-menu {
+    margin: 0;
+    padding: 0;
+}
 #nav-menu > li {
-  position: relative;
-  background: #004400;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding-left: 5px;
-  color: #EDEDED;
+    padding: 5px 25px;
+    margin: 25px 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent;
+}
+#avatar {
+  display: block;
+  float: left;
+  height: 100px;
+  margin: 1px 15px;
+  border: 3px solid transparent;
 }
 
-#nav-menu > li:before {
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: 2px;
-  border-right: 20px solid #004400;
-  border-left: 0px solid transparent;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+/* Dressing */
+body {
+    background-color: #333;
+    color: #DDD;
+}
+h2 {
+    color: #EEE;
+}
+#nav-menu > li {
+    list-style: none;
+    background-color: #444;
+    border-color: #3B3B3B;
+    border-left-color: transparent;
+    border-left-width: 0;
+    letter-spacing: 2px;
+    border-top-right-radius: 999px;
+}
+#avatar {
+    border-color: #999;
 }
